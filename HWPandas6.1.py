@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_csv("6.csv")
+a = df.info()
+b = df.describe()
+c = df.describe().transpose()
+print("Инфо:", a)
+print("Описание: ", b)
+print("Транспонирование: ", c)
+#result_df = pd.concat(a, b, c)
+#result_df.to_json("new_data.json")
